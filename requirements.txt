@@ -1,0 +1,9 @@
+astroid==3.0.2
+dill==0.3.7
+isort==5.13.2
+mccabe==0.7.0
+platformdirs==4.1.0
+pycairo==1.25.1
+PyGObject==3.46.0
+PyGObject-stubs==2.11.0
+tomlkit==0.12.3

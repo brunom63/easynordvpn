@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Visual NordVPN
+Comment=B8 unofficial NordVPN visual tool
+Exec=|HOME|/.local/share/b8nordvpn/b8nordvpn.py
+Icon=b8nordvpn
+Terminal=false
+Categories=Network;

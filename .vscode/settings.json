@@ -1,0 +1,6 @@
+{
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.diagnosticMode": "workspace",
+    "python.analysis.importFormat": "relative",
+    "python.analysis.inlayHints.functionReturnTypes": true,
+}

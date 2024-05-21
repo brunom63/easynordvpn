@@ -1,0 +1,23 @@
+#!/bin/bash
+
+
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+PATH_EXEC=$HOME/.local
+PATH_SAVE=$PATH_EXEC/share/b8nordvpn
+EXEC_ICON=$PATH_EXEC/share/icons
+EXEC_MENU=$PATH_EXEC/share/applications
+SAVE_NAME=$PATH_SAVE/b8nordvpn.py
+ICON_NAME=/b8nordvpn.png
+MENU_SAVE=/b8nordvpn_local.desktop
+MENU_NAME=/b8nordvpn.desktop
+
+mkdir -p $PATH_SAVE
+mkdir -p $EXEC_ICON
+mkdir -p $EXEC_MENU
+
+cp -R --remove-destination $SCRIPT_DIR/* $PATH_SAVE/ > /dev/null 2>&1
+cp ${PATH_SAVE}${ICON_NAME} ${EXEC_ICON}${ICON_NAME}
+
+fc=$( < ${PATH_SAVE}${MENU_SAVE} )
+echo "${fc//|HOME|/${HOME}}" > ${EXEC_MENU}${MENU_NAME}
+chmod +x $SAVE_NAME

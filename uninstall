@@ -1,0 +1,18 @@
+#!/bin/bash
+
+declare -a todel
+APP=b8nordvpn
+todel[0]=/usr/local/share/applications/${APP}.desktop
+todel[1]=/usr/local/share/icons/${APP}.png
+todel[2]=/usr/local/bin/${APP}
+todel[3]=/opt/${APP}
+todel[4]=$HOME/.local/share/applications/${APP}.desktop
+todel[5]=$HOME/.local/share/icons/${APP}.png
+todel[6]=$HOME/.local/share/${APP}
+
+for i in "${todel[@]}"
+do
+    if [ -d "$i" ] || [ -f "$i" ]; then
+        rm -rf "$i"
+    fi
+done
