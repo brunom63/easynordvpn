@@ -1,7 +1,7 @@
 #!/bin/bash
 
 declare -a todel
-APP=b8nordvpn
+APP=easynordvpn
 todel[0]=/usr/local/share/applications/${APP}.desktop
 todel[1]=/usr/local/share/icons/${APP}.png
 todel[2]=/usr/local/bin/${APP}

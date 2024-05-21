@@ -34,7 +34,7 @@ chmod +x install_local
 
 ## Execute:
 - Click on black NordVPN icon at the menu's Internet folder
-- If you installed it globally, you also get a `b8nordvpn` command
+- If you installed it globally, you also get a `easynordvpn` command
 
 ## Uninstall:
 If globally installed, run as **root**.
@@ -47,13 +47,13 @@ Undones everything that the installation did, in reverse order
 
 ## Install Locations:
 ### Globally
-- Files are copied to `/opt/b8nordvpn`
+- Files are copied to `/opt/easynordvpn`
 - Main executable is linked to `/usr/local/bin`
 - Icon is copied to `/usr/local/share/icons`
 - Desktop file is copied to `/usr/local/share/applications`
 
 ### Local
-- Files are copied to `~/.local/share/b8nordvpn`
+- Files are copied to `~/.local/share/easynordvpn`
 - Icon is copied to `~/.local/share/icons`
 - Desktop file is copied to `~/.local/share/applications`
 

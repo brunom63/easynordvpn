@@ -39,7 +39,7 @@ class MyWindow(Gtk.ApplicationWindow):
 
     def set_init(self):
         self.connect("destroy", Gtk.main_quit)
-        self.set_title("B8 NordVPN")
+        self.set_title("Easy NordVPN")
         self.set_border_width(3)
         self.set_position(Gtk.WindowPosition.CENTER)
         self.options = self.get_connect_options()

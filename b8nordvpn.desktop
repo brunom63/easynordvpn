@@ -1,8 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Visual NordVPN
-Comment=B8 unofficial NordVPN visual tool
-Exec=b8nordvpn
-Icon=b8nordvpn
-Terminal=false
-Categories=Network;

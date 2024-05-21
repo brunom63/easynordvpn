@@ -7,15 +7,15 @@ if [ "$EUID" -ne 0 ]
 fi
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-PATH_SAVE=/opt/b8nordvpn
+PATH_SAVE=/opt/easynordvpn
 PATH_EXEC=/usr/local
 EXEC_RUN=$PATH_EXEC/bin
 EXEC_ICON=$PATH_EXEC/share/icons
 EXEC_MENU=$PATH_EXEC/share/applications
-SAVE_NAME=$PATH_SAVE/b8nordvpn.py
-RUN_NAME=$EXEC_RUN/b8nordvpn
-ICON_NAME=/b8nordvpn.png
-MENU_NAME=/b8nordvpn.desktop
+SAVE_NAME=$PATH_SAVE/easynordvpn.py
+RUN_NAME=$EXEC_RUN/easynordvpn
+ICON_NAME=/easynordvpn.png
+MENU_NAME=/easynordvpn.desktop
 
 mkdir -p $PATH_SAVE
 mkdir -p $EXEC_RUN

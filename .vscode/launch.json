@@ -8,7 +8,7 @@
             "name": "Python: Current File",
             "type": "debugpy",
             "request": "launch",
-            "program": "b8nordvpn.py",
+            "program": "easynordvpn.py",
             "console": "integratedTerminal",
             "justMyCode": true
         }
