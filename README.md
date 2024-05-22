@@ -11,10 +11,10 @@ App covers most of the basic functionalities and configurations you probably nee
 - Not the most beautiful app in the world, but it does make life easier.
 
 
-![Alt text](screenshots/connect_online.png?raw=true "Connection Online")
-![Alt text](screenshots/status_online.png?raw=true "Status Online")
-![Alt text](screenshots/conf_online.png?raw=true "Configuration Online")
-<img src="screenshots/status_offline.png" width="150" alt="My cool logo"/>
+<img src="screenshots/connect_offline.png" width="150" alt="Connection Offline"/>
+<img src="screenshots/connect_online.png" width="150" alt="Connection Online"/>
+<img src="screenshots/status_online.png" width="150" alt="Status Online"/>
+<img src="screenshots/conf_online.png" width="150" alt="Configuration Online"/>
 
 ## Requirements
 - Obviously, NordVPN's Linux app (the one with the `nordvpn` command)
