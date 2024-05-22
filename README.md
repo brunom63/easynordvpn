@@ -1,4 +1,4 @@
-# Visual NordVPN
+# Easy NordVPN
 ## About
 Just a tool to make my life easier. Got tired of typing the `nordvpn` command 10 times per day.
 
