@@ -11,7 +11,6 @@ App covers most of the basic functionalities and configurations you probably nee
 - Not the most beautiful app in the world, but it does make life easier.
 
 <p style="display: flex; flex-direction: row">
-    <img src="screenshots/connect_offline.png" width="250" alt="Connection Offline"/>
     <img src="screenshots/connect_online.png" width="250" alt="Connection Online"/>
     <img src="screenshots/status_online.png" width="250" alt="Status Online"/>
     <img src="screenshots/conf_online.png" width="250" alt="Configuration Online"/>
