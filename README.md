@@ -10,6 +10,10 @@ App covers most of the basic functionalities and configurations you probably nee
 - Since it's only a single python file/class, you can quickly integrate it with your desktop widgets and plugins.
 - Not the most beautiful app in the world, but it does make life easier.
 
+![Alt text](screenshots/connect_online.png?raw=true "Connection Online")
+![Alt text](screenshots/status_online.png?raw=true "Status Online")
+![Alt text](screenshots/conf_online.png?raw=true "Configuration Online")
+
 ## Requirements
 - Obviously, NordVPN's Linux app (the one with the `nordvpn` command)
 - Python 3
