@@ -42,7 +42,6 @@ class MyWindow(Gtk.ApplicationWindow):
         self.set_title("Easy NordVPN")
         self.set_border_width(3)
         self.set_position(Gtk.WindowPosition.CENTER)
-        self.options = self.get_connect_options()
 
     def init(self):
         win_scroll = Gtk.ScrolledWindow(propagate_natural_height=True,
@@ -63,6 +62,7 @@ class MyWindow(Gtk.ApplicationWindow):
         self.set_settings_grid()
 
     def init_checkup(self):
+        self.options = self.get_connect_options()
         for item in self.options['groups']:
             self.combo_groups.append_text(item)
         for item in self.options['countries']:
