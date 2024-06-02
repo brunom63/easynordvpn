@@ -60,6 +60,7 @@ class MyWindow(Gtk.ApplicationWindow):
         self.set_connect_grid()
         self.set_status_grid()
         self.set_settings_grid()
+        print('Init')
 
     def init_checkup(self):
         self.options = self.get_connect_options()
@@ -67,6 +68,7 @@ class MyWindow(Gtk.ApplicationWindow):
             self.combo_groups.append_text(item)
         for item in self.options['countries']:
             self.combo_countries.append_text(item)
+        print('Init Checkup')
         self.revalidate(is_init=True)
 
     def set_disconnect_box(self):
@@ -117,6 +119,7 @@ class MyWindow(Gtk.ApplicationWindow):
             self.notebook.set_current_page(self.notebook.page_num(self.status_grid))
 
         self.show_all()
+        print('Revalidate')
 
     def connect_items_grid(self):
         self.add_connect_row(0, "Groups",
@@ -251,7 +254,7 @@ class MyWindow(Gtk.ApplicationWindow):
                         self.combo_cities.set_active(
                             self.options["countries"][country].index(city) + 1)
 
-    def action_connect_groups(self, combo):
+    def action_connect_groups(self, _):
         self.combo_countries.set_active(0)
 
     def action_connect_countries(self, combo):
@@ -259,6 +262,9 @@ class MyWindow(Gtk.ApplicationWindow):
         self.combo_cities.remove_all()
         self.combo_cities.append_text('')
         if item != "":
+            if len(self.options['countries'][item]) == 0:
+                self.options['countries'][item] = self.format_list(
+                    self.execute_command(["cities", item]))
             for city in self.options['countries'][item]:
                 self.combo_cities.append_text(city)
 
@@ -301,8 +307,7 @@ class MyWindow(Gtk.ApplicationWindow):
             "groups": self.format_list(self.execute_command(["groups"]))
         }
         for cn in self.format_list(self.execute_command(["countries"])):
-            opts['countries'][cn] = self.format_list(
-                self.execute_command(["cities", cn]))
+            opts['countries'][cn] = []
         return opts
 
     def is_connected(self):
