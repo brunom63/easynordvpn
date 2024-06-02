@@ -60,7 +60,6 @@ class MyWindow(Gtk.ApplicationWindow):
         self.set_connect_grid()
         self.set_status_grid()
         self.set_settings_grid()
-        print('Init')
 
     def init_checkup(self):
         self.options = self.get_connect_options()
@@ -68,7 +67,6 @@ class MyWindow(Gtk.ApplicationWindow):
             self.combo_groups.append_text(item)
         for item in self.options['countries']:
             self.combo_countries.append_text(item)
-        print('Init Checkup')
         self.revalidate(is_init=True)
 
     def set_disconnect_box(self):
@@ -119,7 +117,6 @@ class MyWindow(Gtk.ApplicationWindow):
             self.notebook.set_current_page(self.notebook.page_num(self.status_grid))
 
         self.show_all()
-        print('Revalidate')
 
     def connect_items_grid(self):
         self.add_connect_row(0, "Groups",
