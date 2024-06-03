@@ -2,7 +2,7 @@
 Type=Application
 Name=Easy NordVPN
 Comment=Unofficial NordVPN visual tool
-Exec=easynordvpn
+Exec=|EXEC_CMD|
 Icon=easynordvpn
 Terminal=false
 Categories=Network;

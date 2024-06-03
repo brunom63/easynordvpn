@@ -1,8 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Easy NordVPN
-Comment=Unofficial NordVPN visual tool
-Exec=|HOME|/.local/share/easynordvpn/easynordvpn.py
-Icon=easynordvpn
-Terminal=false
-Categories=Network;
